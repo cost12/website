@@ -1,0 +1,86 @@
+/* variables */
+:root {
+    --background-color: #606060;
+    --primary-color: #ff6b21;
+    --hover-color: #f06020;
+
+    --text-color: #000;
+    --highlight-color: #00a;
+
+    --sm-pad: 10px;
+    --med-pad: 25px;
+    --lg-pad: 50px;
+}
+
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+#myimage {
+    width: 25%;
+    float:right;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--highlight-color);
+}
+
+button {
+    padding: var(--sm-pad);
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+
+/* Menu */
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-item {
+    padding: var(--sm-pad)
+}
+
+.menu-item:hover {
+    background-color: var(--hover-color);
+}
+
+/* Drop down */
+.drop-down-item {
+    display: none;
+}
+
+.drop-down:hover .drop-down-item {
+    display: block;
+}
+
+
+/* Navigation bar */
+.navbar {
+    background: var(--primary-color);
+    margin: 0;
+}
+
+.navbar .container {
+    display: flex;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Miles Harrison </title>
+        <link rel="stylesheet" href="../static/styles/app.css">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    </head>
+
+    <body>
+        <!-- top menu goes here -->
+        <section class="nav" id="topnav"></section>
+
+        <section class="overview">
+            <div class="container">
+                <div class="overview-content">
+                    <h1> Football League Simulator Project </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom menu goes here -->
+        <section class="nav" id="bottomnav"></section>
+
+        <script src="../scripts/project.js"></script>
+        <script src="../scripts/app.js"></script>
+        <script>
+            loadNavbar();
+            loadNavbar('#bottomnav', '../template/bottomnav.html');
+        </script>
+    </body>
+</html>
