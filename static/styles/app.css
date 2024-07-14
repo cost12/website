@@ -28,6 +28,29 @@ body {
     float:right;
 }
 
+.big-image {
+    padding: var(--sm-pad);
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-image {
+    width: 100%;
+    display: inline-block;
+}
+
+#next-images-repl {
+    display: inline-block;
+}
+
+.img-select {
+    padding: var(--sm-pad);
+    width: 10%;
+    display: inline-block;
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);

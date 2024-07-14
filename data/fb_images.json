@@ -1,0 +1,166 @@
+{
+    "screen_nav" : 
+        {
+            "home" :   ["start","home","team","game","draft","trade","free agent","stats"],
+            "team" :   ["home","team","in team","player"],
+            "in team": ["home","team","in team","player"],
+            "game" :   ["home","game","in game"],
+            "in game": ["home","game","in game"],
+            "stats" :  ["home","stats","in stats"],
+            "in stats":["home","stats","in stats"],
+            "draft":   ["home","draft","in draft"],
+            "in draft":["home","draft","in draft"],
+            "player":  ["home","team","player"],
+            "start":   ["team select","start"],
+            "trade":   ["home","trade","in trade"],
+            "in trade":["home","trade","in trade"],
+            "team select":["home","team select"],
+            "free agent": ["home","free agent"]
+        },
+    "images" : [
+        {
+            "location" : "../images/fb_game/start_screen.png",
+            "name" : "Start",
+            "description" : "This is the initial screen and is only shown when the program starts. Selections here determine how the game will be initialized. Some effects are explained below: <br><br> Starting Overall: Decides how good the user team will be initially. <br> &emsp; Very High: Gives the user a very good team <br> &emsp; Very Low: Ensures the starting team will be very bad <br> &emsp; Mega draft: Every team starts with 0 players and the league starts with a 54 round snake draft where each team has a chance to pick their players <br><br> Scouting: Decides how accurate scouting is for college players <br> &emsp; None: No hints are given to the standard scouting <br> &emsp; Full Blue: College players with an overall 10 or more better or 10 or more worse than standard scouting shows are highlighted as blue, players with an overall 5 to 10 better or 5 to 10 worse than standard scouting shows (highlights risky players with big potential, blue is more risky with potential for a better reward) <br> &emsp; Top Red: highlights players expected to outperform their current rating <br><br> Cap: Decides the salary cap the user will have. <br> &emsp; Standard: $200 million <br> &emsp; Bonus: $250 million <br> &emsp; Double Bonus: $300 million <br> &emsp; None: infinite <br><br> User Teams: this option allows for multiplayer on one computer. You can select to play with 1, 2, 3, 4, or all 32 teams",
+            "screen" : "start"
+        },
+        {
+            "location" : "../images/fb_game/team_select.png",
+            "name" : "Team Select",
+            "description" : "After choosing the initial settings, you are directed to this screen where you can select the team you want to control. The game will stay on this screen until all users have picked a team. No two users can pick the same team.",
+            "screen" : "team select"
+        },
+        {
+            "location" : "../images/fb_game/home_screen.png",
+            "name" : "Home Screen",
+            "description" : "This is the main screen. From here you can track team records and schedules, navigate to other screens, and advance the week. The selector at the bottom with \"NE\" and \"DET\" gives the ability to change user teams. It is conveniently located on many screens.",
+            "screen" : "home"
+        },
+        {
+            "location" : "../images/fb_game/home_screen_midseason.png",
+            "name" : "Home Screen (midseason)",
+            "description" : "This is what the home screen might look like midseason. In the view team button, there are 3 circles: the blue one signifies that 10 players are ready to upgrade, the red ones signifies 1 player is injured, and the green one signifies that one player is loyal and willing to negotiate a smaller contract to help free cap space.",
+            "screen" : "home"
+        },
+        {
+            "location" : "../images/fb_game/home_screen_end_of_regular_season.png",
+            "name" : "Home Screen (end of regular season)",
+            "description" : "This is what the home screen might look like at the end of the season. New England has made the playoffs and their next game against Pittsburgh is shown on their schedule.",
+            "screen" : "home"
+        },
+        {
+            "location" : "../images/fb_game/home_screen_end_of_playoffs.png",
+            "name" : "Home Screen (end of playoffs)",
+            "description" : "This is the home screen but scrolled to show additional information. The playoff picture section is visible all season and shows which teams are currently in the playoffs. This screen also shows an alternative way of looking at the schedule. Instead of the team schedule, the weekly schedule is shown for all teams. It looks like the Saints just won the superbowl. Additionally, the AFC and NFC all star teams have been selected and can be viewed.",
+            "screen" : "home"
+        },
+        {
+            "location" : "../images/fb_game/team_offense.png",
+            "name" : "Team Offense",
+            "description" : "This is the screen displayed when you click on \"View Team.\" It shows the starters in their positions as well as the substitutes. From here, you can navigate to find more information about the team, click on a player, or go back to the home screen.",
+            "screen" : "team"
+        },
+        {
+            "location" : "../images/fb_game/team_finances.png",
+            "name" : "Team Finances",
+            "description" : "This screen gives a summary of the team's current cap situation and has relevant information for team building. This team has $79.96 million in cap and can offer as much in a contract with a new player. Also visible is the team's historical records, their current strength at each position, and future draft picks. This team has good running backs and a good kicker, but traded away their first and fifth rounders from next year. Clicking the AUTO button will release the team from user control and decisions will be made automatically. Clicking it again will give control back to the user.",
+            "screen" : "in team"
+        },
+        {
+            "location" : "../images/fb_game/team_stats.png",
+            "name" : "Team Stats",
+            "description" : "This screen shows team stats for each player over different time frames. The rating category is a custom formula for this game.",
+            "screen" : "in team"
+        },
+        {
+            "location" : "../images/fb_game/team_strategy.png",
+            "name" : "Team Strategy",
+            "description" : "This screen shows the team's strategy for games. By clicking on the + and - buttons, a user can effect the probability that a certain formation is called or that a specific player gets the ball.",
+            "screen" : "in team"
+        },
+        {
+            "location" : "../images/fb_game/afc_all_stars.png",
+            "name" : "AFC All Stars",
+            "description" : "This is the AFC all star team. They are lined up in their defensive positions. At the end of each season, the best players from the regular season are selected as the AFC and NFC all stars. No one is in control of this team, they play one game before the superbowl.",
+            "screen" : "team"
+        },
+        {
+            "location" : "../images/fb_game/player_screen.png",
+            "name" : "Player",
+            "description" : "Clicking on a player card brings up this screen. This screen gives a summary of the player's career and current abilities. Alexander Malone is a 23 year old QB taken with 11th pick in the 4th round in 1966. He was initially expected to have an overall of 54 out of college.<br> When a player earns enough XP, they level up and can increase one trait by 1 overall. Some players have abilities where they level up twice as fast and some level up half as fast. Traits are used in game to affect the probabily of different outcomes. Overall helps give context to the value of the trait, 40 is very bad and 99 very good. Value is an estimation of how much another team would give up for this player in a trade. This player is a young quarterback, so he has a higher value. <br><br> Each button has a different effect: <br> Start: Puts the player in the starting lineup, even if there are better players on the roster <br> Bench: Puts the player on the bench event if there are worse players on the roster <br> Good: Places a plus sign on the player card so they can be quickly identified. This is useful for marking players that are overperforming their overall and might be worth keeping even if they have a low overall. <br> Bad: Places a minus sign on the player card <br> Cut: Releases the player to free agency (only works on the user team) <br> Trade: Places the player on the trade block so other teams can make offers (only works on the user team)",
+            "screen" : "player"
+        },
+        {
+            "location" : "../images/fb_game/draft_screen.png",
+            "name" : "Draft",
+            "description" : "This is the draft. Before every season, there is a draft where each team has a chance to get new players. The Patriots are on the clock with the 11th pick. It looks like Dalvin Carter (in red) is a good pick. From the scouting he must be at least 74 overall (69 + 5) and the Patriots have a poor offensive line currently (64 overall shown on the top line). Once the pick has been made, you can click skip to next to advance to the next user pick. Other options include going to the trade screen to trade up for another pick, or scrolling up to see the players that have been drafted. This screen also supports filtering by position.",
+            "screen" : "draft"
+        },
+        {
+            "location" : "../images/fb_game/post_draft_summary.png",
+            "name" : "Draft (summary)",
+            "description" : "This shows the draft results after it has been completed. This view is available at any point in the draft by scrolling up.",
+            "screen" : "in draft"
+        },
+        {
+            "location" : "../images/fb_game/choose_game_to_watch.png",
+            "name" : "Games to Watch",
+            "description" : "These are the games available to watch this week. It's the first week of the playoffs, so there aren't as many games as a normal week. The current user is controlling New England, so that game is highlighted.",
+            "screen" : "game"
+        },
+        {
+            "location" : "../images/fb_game/watch_game.png",
+            "name" : "Watch Game",
+            "description" : "This screen gives the ability to watch the game. Currently, the play selection is set to AUTO, but the buttons on the right allow the user to pick plays for their team. On the bottom of the screen, there is a summary of the previous play, and a quick view of the stats. This view updates after each play and shows relevant stats (run stats after a run play, pass stats after a pass play, kicking stats after a kick, etc)",
+            "screen" : "in game"
+        },
+        {
+            "location" : "../images/fb_game/postgame_stats.png",
+            "name" : "Postgame Stats",
+            "description" : "After the game concludes, this is the next screen. It provides a summary of the scoring, player stats, and a recap of each drive.",
+            "screen" : "in game"
+        },
+        {
+            "location" : "../images/fb_game/midseason_passing_stats_leaders.png",
+            "name" : "Passing Leaders (midseason)",
+            "description" : "This shows the passing leaders partway through the season. By clicking on different columns, you can sort by different stats. Using the buttons you can view other stats, other time frames, and filter which players or teams to view. The box in the top left contains information about players in the league and was implemented as a way to ensure I could balance the league. Below that, the superbowl winners are added every year.",
+            "screen" : "stats"
+        },
+        {
+            "location" : "../images/fb_game/end_of_season_passing_leaders.png",
+            "name" : "Passing Leaders (end of season)",
+            "description" : "This is what the passing leaders look like at the end of the season. It is slightly inflated compared to real life, but not terrible.",
+            "screen" : "in stats"
+        },
+        {
+            "location" : "../images/fb_game/end_of_season_awards.png",
+            "name" : "Awards",
+            "description" : "Awards are assigned at the end of the season to the top players in the league. These award winners are determined partially by the custom rating formula and partially by volume and importance of position.",
+            "screen" : "in stats"
+        },
+        {
+            "location" : "../images/fb_game/free_agent_screen.png",
+            "name" : "Free Agents",
+            "description" : "To make a bid on a free agent, just click on the player. Players can be filtered by asking price, position, and whether they are a rookie. Users and auto teams compete to find players to fill their lineup.",
+            "screen" : "free agent"
+        },
+        {
+            "location" : "../images/fb_game/trade_center.png",
+            "name" : "Trade Center",
+            "description" : "This is the trade center. Players can be placed on the trade block when their team wants to trade them. Recent trades shows all trades in the league from the current year. My trades shows any trades offered to the user team for a player on the trade block. Propose trade allows the user to offer a trade to another team.",
+            "screen" : "trade"
+        },
+        {
+            "location" : "../images/fb_game/in_trade.png",
+            "name" : "Trade (in progress)",
+            "description" : "From this screen, you can click on either side to view their team and add resources to the trade. Both teams have different values for each player and pick depending on their needs. Auto teams will only accept a trade if their net value is positive while a user can accept any trade they want. Once a trade is accepted by both teams, the teams will swap resources.",
+            "screen" : "in trade"
+        },
+        {
+            "location" : "../images/fb_game/recent_trades.png",
+            "name" : "Recent Trades",
+            "description" : "These are trades that have been accepted this season. (I'm not really sure what happened to the net value)",
+            "screen" : "in trade"
+        }
+    ]
+}
