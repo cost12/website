@@ -22,7 +22,7 @@ async function loadData(callback) {
 }
 
 function loadImage() {
-    let imageHtml = '<img class="big-image" src="' + image.location + '" alt="' + image.name + '">';
+    let imageHtml = '<h2 class="centerlabel">'+ image.name +'</h2><img class="big-image" src="' + image.location + '" alt="' + image.name + '">';
     loadHtmlToElt('main-image-repl',imageHtml);
     let descHtml = '<p>' + image.description + '</p>';
     loadHtmlToElt('main-desc-repl', descHtml);
