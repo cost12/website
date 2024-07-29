@@ -10,7 +10,7 @@ function changeScreen(screen) {
     document.location.href = screen;
 }
 
-function loadNavbar(element='#topnav', html='../template/topnav.html') {
+function loadNavbar(element='#topnav', html='../topnav.html') {
     $(element).load(html, function() {
         const dropDownElement = document.getElementById("drop-down-items");
         if (dropDownElement == null) {return;}
