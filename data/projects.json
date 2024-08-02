@@ -1,0 +1,65 @@
+{
+    "projects" : 
+        [
+            {
+                "short_name" : "Football Simulation Game",
+                "long_name" : "Football League Simulator Project",
+                "languages" : ["Python"],
+                "environment" : ["processing"],
+                "learned" : ["OOP", "UI design", "importance of organizing code"],
+                "github" : "https://github.com/cost12/Football-Game",
+                "description_preview" : "I made this project the summer after high school. It attempts to simulate being a GM/coach in the NFL. Features include drafts, trades, games simulated play by play, playcalling, and plenty of stats. From this project, I've learned the importance of keeping projects maintainable.",
+                "description_onpage" : "I have always been interested in sports and statistics, so this project was an attempt to combine the two to create fun game. I started this project during the covid lockdown after graduating high school and spent most of the summer working on it. I worked on and off on this project for the next year or two before finally deciding the code had become too much of a mess to maintain. I'm happy with the product, but this is also taught me a lesson about making sure my code is maintainable. Unfortunately, this project is difficult to share, so instead I have some screenshots highlighting the game's features. Click through the images on the bottom to see different screens and descriptions.",
+                "link" : "footballproject.html",
+                "bodyhtml" : "templates/footballbody.html"
+            },
+            {
+                "short_name" : "Foosball Data Collection",
+                "long_name" : "Foosball Data Collection Project",
+                "languages" : ["Python"],
+                "environment" : ["tkinter", "pandas", "numpy", "matplotlib"],
+                "learned" : ["OOP", "UI design", "tkinter", "pandas", "numpy"],
+                "github" : "https://github.com/cost12/foosball_data",
+                "description_preview" : "I started this project my sophomore year of college. The program reads in a list of games and compiles stats including wins/loss records, goals scored, winning streaks, ELO, and game outcome probabilities. Some features include game filtering, tables of stats, score predictions and simulations, and calculations of records. This project helped me learn to make an interface with tkinter, create graphs in matplotlib, and to use dataframes in pandas.",
+                "description_onpage" : "My roommates and I had a foosball table in college. As part of a school project, I collected data from 40 games. The school project didn't go much further, but I wanted to do more. So, I decided to create a program to track our records and other statistics. The more we played, the more features I added. The data is stored in a google sheet and then read into a pandas dataframe when the program runs. Initially, I had a command line interface, but I expanded to using tkinter as the program became more complex. This was my first time using tkinter and pandas so the code is a little messy, but it is an improvement over some of my previous projects and still maintainable.",
+                "link" : "foosballproject.html",
+                "bodyhtml" : "templates/foosballbody.html"
+            },
+            {
+                "short_name" : "Spotify API Project",
+                "long_name" : "Spotify API Project",
+                "languages" : ["Python","HTML", "CSS", "JavaScript"],
+                "environment" : ["Flask"],
+                "learned" : ["OOP", "Flask", "Spotify API", "OAUTH"],
+                "github" : "na",
+                "description_preview" : "This is a current project. I am learning how to interact with Spotify's API and how to use Flask to build a website.",
+                "description_onpage" : "This is a current project. I am learning how to interact with Spotify's API and how to use Flask to build a website.",
+                "link" : "spotifyproject.html",
+                "bodyhtml" : "templates/spotifybody.html"
+            },
+            {
+                "short_name" : "Football Environment Reinforcement Learning",
+                "long_name" : "Football Environment Reinforcement Learning Project",
+                "languages" : ["Python"],
+                "environment" : ["tkinter", "django"],
+                "learned" : ["OOP", "django", "Deep Q-Learning"],
+                "github" : "https://github.com/cost12/fb_rl",
+                "description_preview" : "After taking a reinforcement learning class, I was interested to dive deeper. I created a reinforcement learning environment modeled after a simple retro football game that I owned. I have not had much success yet with learning, so this is still a current project. From this project, I am gaining experience in tkinter, pytorch, and reinforcement learning techniques like Deep Q-Learning.",
+                "description_onpage" : "",
+                "link" : "fbrlproject.html",
+                "bodyhtml" : "templates/fbrlbody.html"
+            },
+            {
+                "short_name" : "Yahtzee",
+                "long_name" : "Command Line Yahtzee Project",
+                "languages" : ["C++"],
+                "environment" : [""],
+                "learned" : ["OOP"],
+                "github" : "https://github.com/cost12/yahtzee",
+                "description_preview" : "Sometime during the covid lockdown in college, I created a command line yahtzee game. It lets you play standard yahtzee on the command line with multiple players. It also has some options to mess with parameters like how many dice there are and how many rolls there are per turn. This project gave me experience working with C++.",
+                "description_onpage" : "Sometime during the covid lockdown in college, I created a command line yahtzee game. It lets you play standard yahtzee on the command line with multiple players. It also has some options to mess with parameters like how many dice there are and how many rolls there are per turn. This project gave me experience working with C++.",
+                "link" : "yahtzeeproject.html",
+                "bodyhtml" : "templates/yahtzeebody.html"
+            }
+        ]
+}

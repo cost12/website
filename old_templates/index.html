@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Miles Harrison </title>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <link rel="stylesheet" href="static/styles/app.css">
+    </head>
+
+    <body>
+        <!-- top menu goes here -->
+        <section class="nav" id="topnav"></section>
+        
+        <section class="image-sect">
+            <div class="container">
+                <div class="image">
+                    <img id="myimage" src="images/track_headshot.jpg" alt="Me running in the Seattle downhill half marathon">
+                </div>
+            </div>
+        </section> 
+
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome-content">
+                    <h1> Welcome! </h1>
+                    <p> Hi, my name is Miles Harrison. I'm a recent graduate from RPI with a dual major in Computer Science and Math and a minor in Music. This website is a work in progress to display my projects. <br> <br> I am currently working on learning HTML, CSS, and JavaScript to help build this website. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="projects-content">
+                    <div class="overview">
+                        <h1> My Projects </h1>
+                        <p> These are some projects that I've worked on. </p>
+                    </div>
+                    
+                    <div id="project_insert"></div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- bottom menu goes here -->
+        <section class="nav" id="bottomnav"></section>
+
+        <script src="scripts/project.js"></script>
+        <script src="scripts/app.js"></script>
+        <script>
+            loadNavbar();
+            loadNavbar('#bottomnav', 'bottomnav.html');
+            loadProjectDescs('project_insert');
+        </script>
+    </body>
+</html>

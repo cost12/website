@@ -1,56 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title> Miles Harrison </title>
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <link rel="stylesheet" href="static/styles/app.css">
-    </head>
-
-    <body>
-        <!-- top menu goes here -->
-        <section class="nav" id="topnav"></section>
-        
-        <section class="image-sect">
-            <div class="container">
-                <div class="image">
-                    <img id="myimage" src="images/track_headshot.jpg" alt="Me running in the Seattle downhill half marathon">
-                </div>
+<html>
+  <head>
+    <title>Miles Harrison</title>
+    <link href="static/styles/app.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu">
+        <div class="menu-item">
+          <button onclick="changeScreen('index.html')">Home</button>
+        </div>
+        <div class="menu-item">
+          <button onclick="changeScreen('resume.html')">Resume</button>
+        </div>
+        <div class="menu-item">
+          <div class="drop-down">
+            <button>Projects</button>
+            <div class="drop-down-content">
+              <div class="drop-down-item">
+                <button onclick="changeScreen('footballproject.html')">Football Simulation Game</button>
+              </div>
+              <div class="drop-down-item">
+                <button onclick="changeScreen('foosballproject.html')">Foosball Data Collection</button>
+              </div>
+              <div class="drop-down-item">
+                <button onclick="changeScreen('spotifyproject.html')">Spotify API Project</button>
+              </div>
+              <div class="drop-down-item">
+                <button onclick="changeScreen('fbrlproject.html')">Football Environment Reinforcement Learning</button>
+              </div>
+              <div class="drop-down-item">
+                <button onclick="changeScreen('yahtzeeproject.html')">Yahtzee</button>
+              </div>
             </div>
-        </section> 
+          </div>
+        </div>
+      </div>
+    </nav><section class="image-sect">
+    <div class="container">
+        <div class="image">
+            <img id="myimage" src="images/track_headshot.jpg" alt="Me running in the Seattle downhill half marathon">
+        </div>
+    </div>
+</section> 
 
-        <section class="welcome">
-            <div class="container">
-                <div class="welcome-content">
-                    <h1> Welcome! </h1>
-                    <p> Hi, my name is Miles Harrison. I'm a recent graduate from RPI with a dual major in Computer Science and Math and a minor in Music. This website is a work in progress to display my projects. <br> <br> I am currently working on learning HTML, CSS, and JavaScript to help build this website. </p>
-                </div>
-            </div>
-        </section>
+<section class="welcome">
+    <div class="container">
+        <div class="welcome-content">
+            <h1> Welcome! </h1>
+            <p> Hi, my name is Miles Harrison. I'm a recent graduate from RPI with a dual major in Computer Science and Math and a minor in Music. This website is a work in progress to display my projects. <br> <br> I am currently working on learning HTML, CSS, and JavaScript to help build this website. </p>
+        </div>
+    </div>
+</section>
+    <section class="projects">
+      <h1>My projects</h1>
+      <p>These are some projects I've worked on.</p>
+      <div class="project">
+        <h3>
+          <a href="footballproject.html">Football Simulation Game</a>
+        </h3>
+        <p>I made this project the summer after high school. It attempts to simulate being a GM/coach in the NFL. Features include drafts, trades, games simulated play by play, playcalling, and plenty of stats. From this project, I've learned the importance of keeping projects maintainable.</p>
+      </div>
+      <div class="project">
+        <h3>
+          <a href="foosballproject.html">Foosball Data Collection</a>
+        </h3>
+        <p>I started this project my sophomore year of college. The program reads in a list of games and compiles stats including wins/loss records, goals scored, winning streaks, ELO, and game outcome probabilities. Some features include game filtering, tables of stats, score predictions and simulations, and calculations of records. This project helped me learn to make an interface with tkinter, create graphs in matplotlib, and to use dataframes in pandas.</p>
+      </div>
+      <div class="project">
+        <h3>
+          <a href="spotifyproject.html">Spotify API Project</a>
+        </h3>
+        <p>This is a current project. I am learning how to interact with Spotify's API and how to use Flask to build a website.</p>
+      </div>
+      <div class="project">
+        <h3>
+          <a href="fbrlproject.html">Football Environment Reinforcement Learning</a>
+        </h3>
+        <p>After taking a reinforcement learning class, I was interested to dive deeper. I created a reinforcement learning environment modeled after a simple retro football game that I owned. I have not had much success yet with learning, so this is still a current project. From this project, I am gaining experience in tkinter, pytorch, and reinforcement learning techniques like Deep Q-Learning.</p>
+      </div>
+      <div class="project">
+        <h3>
+          <a href="yahtzeeproject.html">Yahtzee</a>
+        </h3>
+        <p>Sometime during the covid lockdown in college, I created a command line yahtzee game. It lets you play standard yahtzee on the command line with multiple players. It also has some options to mess with parameters like how many dice there are and how many rolls there are per turn. This project gave me experience working with C++.</p>
+      </div>
+    </section><nav class="navbar">
+    <div class="container">
+        <div class="menu">
+            <div class="menu-item">
+                <a href="https://www.linkedin.com/in/miles-harrison-b2275b20a/"> LinkedIn </a>
+            </div> 
 
-        <section class="projects">
-            <div class="container">
-                <div class="projects-content">
-                    <div class="overview">
-                        <h1> My Projects </h1>
-                        <p> These are some projects that I've worked on. </p>
-                    </div>
-                    
-                    <div id="project_insert"></div>
-                </div>
-            </div>
-        </section> 
-
-        <!-- bottom menu goes here -->
-        <section class="nav" id="bottomnav"></section>
-
-        <script src="scripts/project.js"></script>
-        <script src="scripts/app.js"></script>
-        <script>
-            loadNavbar();
-            loadNavbar('#bottomnav', 'bottomnav.html');
-            loadProjectDescs('project_insert');
-        </script>
-    </body>
+            <div class="menu-item">
+                <a href="https://github.com/cost12"> GitHub </a>
+            </div> 
+        </div> 
+    </div> 
+    <script src="scripts/app.js"></script>
+  </body>
 </html>

@@ -1,0 +1,12 @@
+{
+                "short_name" : "",
+                "long_name" : "",
+                "languages" : [""],
+                "environment" : [""],
+                "learned" : [""],
+                "github" : "",
+                "description_preview" : "",
+                "description_onpage" : "",
+                "link" : ".html",
+                "bodyhtml" : "templates/example.html"
+            }
