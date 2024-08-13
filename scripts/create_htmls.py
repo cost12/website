@@ -15,12 +15,18 @@ def create_index(projects, topnav, bottomnav):
         doc += util.raw(f.read())
     with doc:
         with tags.section(_class="projects"):
-            tags.h1("My projects")
-            tags.p("These are some projects I've worked on.")
-            for project in projects:
-                with tags.div(_class="project"):
-                    tags.h3(tags.a(project["short_name"], href=project["link"]))
-                    tags.p(project["description_preview"])
+            with tags.div(_class="project-header"):
+                tags.h1("My projects")
+                tags.p("These are some projects I've worked on.")
+            with tags.div(_class="project-holder"):
+                for project in projects:
+                    with tags.div(_class="project", onclick=f"changeScreen('{project['''link''']}')"):
+                        tags.h3(tags.a(project["short_name"], href=project["link"]))
+                        text1="Language" + ("s: " if len(project["languages"]) > 1 else ": ") + ", ".join(project["languages"])
+                        text2="Environment/Libraries: " + ", ".join(project["environment"])
+                        tags.p(text1,_class="default")
+                        tags.p(text2,_class="default")
+                        tags.p(project["description_preview"], _class="on-hover")
     doc += bottomnav
     doc += tags.script(src="scripts/app.js")
     return doc

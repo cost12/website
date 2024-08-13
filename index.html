@@ -33,6 +33,9 @@
               <div class="drop-down-item">
                 <button onclick="changeScreen('yahtzeeproject.html')">Yahtzee</button>
               </div>
+              <div class="drop-down-item">
+                <button onclick="changeScreen('wordleproject.html')">Wordle</button>
+              </div>
             </div>
           </div>
         </div>
@@ -54,37 +57,59 @@
     </div>
 </section>
     <section class="projects">
-      <h1>My projects</h1>
-      <p>These are some projects I've worked on.</p>
-      <div class="project">
-        <h3>
-          <a href="footballproject.html">Football Simulation Game</a>
-        </h3>
-        <p>I made this project the summer after high school. It attempts to simulate being a GM/coach in the NFL. Features include drafts, trades, games simulated play by play, playcalling, and plenty of stats. From this project, I've learned the importance of keeping projects maintainable.</p>
+      <div class="project-header">
+        <h1>My projects</h1>
+        <p>These are some projects I've worked on.</p>
       </div>
-      <div class="project">
-        <h3>
-          <a href="foosballproject.html">Foosball Data Collection</a>
-        </h3>
-        <p>I started this project my sophomore year of college. The program reads in a list of games and compiles stats including wins/loss records, goals scored, winning streaks, ELO, and game outcome probabilities. Some features include game filtering, tables of stats, score predictions and simulations, and calculations of records. This project helped me learn to make an interface with tkinter, create graphs in matplotlib, and to use dataframes in pandas.</p>
-      </div>
-      <div class="project">
-        <h3>
-          <a href="spotifyproject.html">Spotify API Project</a>
-        </h3>
-        <p>This is a current project. I am learning how to interact with Spotify's API and how to use Flask to build a website.</p>
-      </div>
-      <div class="project">
-        <h3>
-          <a href="fbrlproject.html">Football Environment Reinforcement Learning</a>
-        </h3>
-        <p>After taking a reinforcement learning class, I was interested to dive deeper. I created a reinforcement learning environment modeled after a simple retro football game that I owned. I have not had much success yet with learning, so this is still a current project. From this project, I am gaining experience in tkinter, pytorch, and reinforcement learning techniques like Deep Q-Learning.</p>
-      </div>
-      <div class="project">
-        <h3>
-          <a href="yahtzeeproject.html">Yahtzee</a>
-        </h3>
-        <p>Sometime during the covid lockdown in college, I created a command line yahtzee game. It lets you play standard yahtzee on the command line with multiple players. It also has some options to mess with parameters like how many dice there are and how many rolls there are per turn. This project gave me experience working with C++.</p>
+      <div class="project-holder">
+        <div class="project" onclick="changeScreen('footballproject.html')">
+          <h3>
+            <a href="footballproject.html">Football Simulation Game</a>
+          </h3>
+          <p class="default">Language: Python</p>
+          <p class="default">Environment/Libraries: processing</p>
+          <p class="on-hover">I made this project the summer after high school. It attempts to simulate being a GM/coach in the NFL. Features include drafts, trades, games simulated play by play, playcalling, and plenty of stats. From this project, I've learned the importance of keeping projects maintainable.</p>
+        </div>
+        <div class="project" onclick="changeScreen('foosballproject.html')">
+          <h3>
+            <a href="foosballproject.html">Foosball Data Collection</a>
+          </h3>
+          <p class="default">Language: Python</p>
+          <p class="default">Environment/Libraries: tkinter, pandas, numpy, matplotlib</p>
+          <p class="on-hover">I started this project my sophomore year of college. The program reads in a list of games and compiles stats including wins/loss records, goals scored, winning streaks, ELO, and game outcome probabilities. Some features include game filtering, tables of stats, score predictions and simulations, and calculations of records. This project helped me learn to make an interface with tkinter, create graphs in matplotlib, and to use dataframes in pandas.</p>
+        </div>
+        <div class="project" onclick="changeScreen('spotifyproject.html')">
+          <h3>
+            <a href="spotifyproject.html">Spotify API Project</a>
+          </h3>
+          <p class="default">Languages: Python, HTML, CSS, JavaScript</p>
+          <p class="default">Environment/Libraries: Flask</p>
+          <p class="on-hover">This is a current project. I am learning how to interact with Spotify's API and how to use Flask to build a website.</p>
+        </div>
+        <div class="project" onclick="changeScreen('fbrlproject.html')">
+          <h3>
+            <a href="fbrlproject.html">Football Environment Reinforcement Learning</a>
+          </h3>
+          <p class="default">Language: Python</p>
+          <p class="default">Environment/Libraries: tkinter, django</p>
+          <p class="on-hover">After taking a reinforcement learning class, I was interested to dive deeper. I created a reinforcement learning environment modeled after a simple retro football game that I owned. I have not had much success yet with learning, so this is still a current project. From this project, I am gaining experience in tkinter, pytorch, and reinforcement learning techniques like Deep Q-Learning.</p>
+        </div>
+        <div class="project" onclick="changeScreen('yahtzeeproject.html')">
+          <h3>
+            <a href="yahtzeeproject.html">Yahtzee</a>
+          </h3>
+          <p class="default">Language: C++</p>
+          <p class="default">Environment/Libraries: </p>
+          <p class="on-hover">Sometime during the covid lockdown in college, I created a command line yahtzee game. It lets you play standard yahtzee on the command line with multiple players. It also has some options to mess with parameters like how many dice there are and how many rolls there are per turn. This project gave me experience working with C++.</p>
+        </div>
+        <div class="project" onclick="changeScreen('wordleproject.html')">
+          <h3>
+            <a href="wordleproject.html">Wordle</a>
+          </h3>
+          <p class="default">Language: C++</p>
+          <p class="default">Environment/Libraries: </p>
+          <p class="on-hover">When wordle was popular, I wanted to create my own version of the game. This program runs wordle, gives some additional statistics and features a brute force &quot;AI&quot; that will make guesses. This runs in the command line.</p>
+        </div>
       </div>
     </section><nav class="navbar">
     <div class="container">

@@ -1,6 +1,6 @@
 /* variables */
 :root {
-    --background-color: #606060;
+    --background-color: #fff7e0;
     --primary-color: #ff6b21;
     --hover-color: #f06020;
 
@@ -13,23 +13,16 @@
     --lg-pad: 50px;
 }
 
-/* General */
-/*
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}*/
-/*
-body {
-    background-color: var(--background-color);
-}*/
-
-#myimage {
-    width: 15%;
-    float:right;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+/* Football */
 .big-image {
     padding: var(--sm-pad);
     display: block;
@@ -56,16 +49,6 @@ body {
     width: 10%;
     display: inline-block;
 }
-/*
-a {
-    text-decoration: none;
-    color: var(--link-color);
-}*/
-/*
-a:hover {
-    text-decoration: underline;
-    color: var(--highlight-color);
-}*/
 
 button {
     padding: var(--sm-pad);
@@ -86,7 +69,7 @@ button:hover {
 }
 
 .menu-item {
-    padding: var(--sm-pad)
+    padding: var(--sm-pad);
 }
 
 .menu-item:hover {
@@ -102,21 +85,71 @@ button:hover {
 .drop-down-content {
     display: none;
     position: absolute;
-    z-index: 1;
 }
 
 .drop-down:hover .drop-down-content {
     display: block;
 }
 
-
 /* Navigation bar */
 .navbar {
     background: var(--primary-color);
-    margin: 0;
-    padding: 0;
 }
-/*
-.navbar .container {
-    display: flex;
-}*/
+
+/* Project */
+.project-header {
+    margin: 10px;
+}
+
+.project-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project {
+    background-color: #a0cdef98;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+    height: 250px;
+}
+
+.project > .on-hover {
+    display: none;
+}
+
+.project:hover > .on-hover {
+    display: block;
+}
+
+.project:hover > .default {
+    display: none;
+}
+
+.project:hover {
+    background-color: #7bc6fe98;
+}
+
+.project h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.project p {
+    margin: 5px;
+}
+
+/* Image */
+#myimage {
+    width: 17%;
+    float:right;
+    border-style: solid;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+/* Welcome */
+.welcome {
+    margin: 10px;
+    width: 70%;
+}

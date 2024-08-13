@@ -60,6 +60,18 @@
                 "description_onpage" : "Sometime during the covid lockdown in college, I created a command line yahtzee game. It lets you play standard yahtzee on the command line with multiple players. It also has some options to mess with parameters like how many dice there are and how many rolls there are per turn. This project gave me experience working with C++.",
                 "link" : "yahtzeeproject.html",
                 "bodyhtml" : "templates/yahtzeebody.html"
+            },
+            {
+                "short_name" : "Wordle",
+                "long_name" : "Command Line Wordle Project",
+                "languages" : ["C++"],
+                "environment" : [""],
+                "learned" : ["OOP"],
+                "github" : "https://github.com/cost12/Wordle",
+                "description_preview" : "When wordle was popular, I wanted to create my own version of the game. This program runs wordle, gives some additional statistics and features a brute force \"AI\" that will make guesses. This runs in the command line.",
+                "description_onpage" : "When wordle was popular, I wanted to create my own version of the game. This program runs wordle, gives some additional statistics and features a brute force \"AI\" that will make guesses. This runs in the command line.",
+                "link" : "wordleproject.html",
+                "bodyhtml" : "templates/wordlebody.html"
             }
         ]
 }
