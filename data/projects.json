@@ -31,7 +31,7 @@
                 "languages" : ["Python","HTML", "CSS", "JavaScript"],
                 "environment" : ["Flask"],
                 "learned" : ["OOP", "Flask", "Spotify API", "OAUTH"],
-                "github" : "na",
+                "github" : "https://github.com/cost12/spotify_project",
                 "description_preview" : "This is a current project. I am learning how to interact with Spotify's API and how to use Flask to build a website.",
                 "description_onpage" : "This is a current project. I am learning how to interact with Spotify's API and how to use Flask to build a website.",
                 "link" : "spotifyproject.html",
